@@ -6,12 +6,17 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { SkHeaderComponent } from './sk-header.component';
 import { SkJobsComponent } from './sk-jobs/sk-jobs.component';
+import { SkJobListComponent } from './sk-jobs/sk-job-list.component';
+import { SkJobsAvailableComponent } from './sk-jobs/sk-jobs-available.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SkHeaderComponent,
-    SkJobsComponent
+    SkJobsComponent,
+    SkJobListComponent,
+    SkJobsAvailableComponent,
+    SkJobsAvailableComponent
   ],
   imports: [
     BrowserModule,
