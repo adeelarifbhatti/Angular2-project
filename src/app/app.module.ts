@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SkHeaderComponent } from './sk-header.component';
+import { SkJobsComponent } from './sk-jobs/sk-jobs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkHeaderComponent
+    SkHeaderComponent,
+    SkJobsComponent
   ],
   imports: [
     BrowserModule,
