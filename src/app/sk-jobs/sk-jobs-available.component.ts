@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import {Jobs} from '../jobs';
 
 @Component({
   selector: 'app-sk-jobs-available',
@@ -6,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sk-jobs-available.component.css']
 })
 export class SkJobsAvailableComponent implements OnInit {
-	job;
-	jobId;
+	@Input() job: Jobs;
+	jobId: number;
 
   constructor() { }
 
