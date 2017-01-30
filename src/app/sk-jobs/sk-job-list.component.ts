@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 import {Jobs} from '../jobs';
-import {SkJobsAvailableComponent} from './sk-jobs-available.component';
 
 @Component({
   selector: 'app-sk-job-list',
@@ -11,6 +10,11 @@ import {SkJobsAvailableComponent} from './sk-jobs-available.component';
 export class SkJobListComponent implements OnInit {
 	jobs: Jobs[] = [];
 	dummyjob = new Jobs('dummy','dummy','dummy');
+	@Output() clickJob = new EventEmitter<Jobs>();
+	jobClick(dummyjob: Jobs){
+		this.clickJob.emit(dummyjob);
+
+	}
 
 
   constructor() { }

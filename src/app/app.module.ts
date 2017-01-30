@@ -8,6 +8,7 @@ import { SkHeaderComponent } from './sk-header.component';
 import { SkJobsComponent } from './sk-jobs/sk-jobs.component';
 import { SkJobListComponent } from './sk-jobs/sk-job-list.component';
 import { SkJobsAvailableComponent } from './sk-jobs/sk-jobs-available.component';
+import { SkJobDetailComponent } from './sk-jobs/sk-job-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SkJobsAvailableComponent } from './sk-jobs/sk-jobs-available.component'
     SkJobsComponent,
     SkJobListComponent,
     SkJobsAvailableComponent,
-    SkJobsAvailableComponent
+    SkJobsAvailableComponent,
+    SkJobDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,8 @@
 <div class="row">
 	<div class="col-md-5">
-		<app-sk-job-list></app-sk-job-list>
+		<app-sk-job-list (clickJob)='skSelectedJob=$event'></app-sk-job-list>
 	</div>
 	<div class="col-md-7">
-		Job Details
+		<app-sk-job-detail [selectedJob]='skSelectedJob'></app-sk-job-detail>
 	</div>
 </div>
